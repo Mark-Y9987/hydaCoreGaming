@@ -1,0 +1,30 @@
+.header {
+	display: none;
+	@include mq($large) {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+.mobile-name {
+	text-align: center;
+	@include mq($large) {
+		display: none;
+	}
+}
+
+.grid__col--9.show-mobile {
+	@include mq($large) {
+		display: none;
+	}
+}
+
+.nav__item {
+	@extend %nav;
+}
+
+.footer__nav {
+	@extend %footerNav;
+}

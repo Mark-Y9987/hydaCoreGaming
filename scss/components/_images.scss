@@ -1,0 +1,93 @@
+.img--logo {
+	@extend %blocked;
+	margin: em(36) auto;
+	width: em(250);
+	height: em(250);
+	transition-duration: .4s;
+
+	@include mq($large) {
+		width: em(500);
+		height: em(500);
+	}
+}
+
+.img--logo:hover {
+	animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+	transform: translate3d(0, 0, 0);
+	backface-visibility: hidden;
+	perspective: 1000px;
+}
+
+@keyframes shake {
+
+	10%,
+	90% {
+		transform: translate3d(-1px, 0, 0);
+	}
+
+	20%,
+	80% {
+		transform: translate3d(2px, 0, 0);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: translate3d(-4px, 0, 0);
+	}
+
+	40%,
+	60% {
+		transform: translate3d(4px, 0, 0);
+	}
+}
+
+.img--github {
+	@extend %blocked;
+	padding: em(12);
+	margin: em(12) auto;
+	max-width: 100%;
+	transition: transform .4s;
+
+	@include mq($large) {
+		display: inline-block;
+	}
+}
+
+.img--resume {
+	display: block;
+	max-width: 937px;
+	width: 100%;
+	margin: auto;
+}
+
+
+.img--avatar {
+	@extend %blocked;
+	margin: 0 auto;
+	padding: em(24);
+}
+
+.sponsors {
+	@extend %blocked;
+
+	@include mq($large) {
+		display: inline-block;
+		margin-left: em(24);
+		margin-right: em(24);
+	}
+}
+
+.img--frame {
+	@extend %blocked;
+	opacity: 1;
+	width: em(200);
+	max-width: 100%;
+	margin: em(36) auto;
+	transition: .5s ease;
+	backface-visibility: hidden;
+
+	@include mq($large) {
+		display: inline-block;
+	}
+}

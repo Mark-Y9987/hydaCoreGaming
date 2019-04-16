@@ -1,0 +1,63 @@
+.headline--primary {
+	color: $color-secondary;
+	@extend %centered;
+	padding-bottom: em(16);
+}
+
+.headline--secondary {
+	@extend %centered;
+	font-size: em(24);
+	padding-top: 0;
+
+}
+
+.headline--tertiary {
+	color: white;
+	@extend %centered;
+	font-size: em(20);
+	padding-top: 0;
+}
+
+.list--primary li {
+	color: $color-text-secondary;
+}
+
+.list--primary p {
+	color: $color-text-tertiary;
+}
+
+.list--secondary li {
+	color: $color-text-quadriary;
+}
+
+.symbol {
+	font-size: em(30);
+	margin-bottom: em(24);
+}
+
+.symbol--small {
+	font-size: em(20);
+}
+
+.music-note {
+	color: $color-contrast;
+}
+
+.white {
+	color: white;
+}
+
+.link {
+	color: $color-secondary;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#myBtn-2:hover {
+	font-weight: bold;
+	background-color: $color-contrast;
+	color: white;
+	border-radius: em(8);
+	padding: em(12);
+	transition: .4s;
+}

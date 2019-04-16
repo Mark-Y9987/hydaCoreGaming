@@ -1,0 +1,30 @@
+// Fonts
+
+$font-family: 'Open Sans',
+sans-serif;
+
+// Colors
+
+$color-background: #e9e9e9;
+
+$color-primary: #ff9d00;
+$color-contrast: #0086df;
+$color-secondary: #4f03a5;
+
+$color-text: #4f03a5;
+$color-text-secondary: #f1bb9c;
+$color-text-tertiary: #b8b2b2;
+$color-text-quadriary: #eeeeee;
+$color-border: #e2e2e2;
+
+// Color Maps
+
+$btn-colors: (default: #68d9f1, success: #5dc57a, error : #dd8b8b, warning: #ed8257, info : #856ea2);
+
+$grid-colors: (3: white, 4: white, 5: white, 6: white, 7: white, 8: white, 12: white);
+// Breakpoints
+$medium: 768px;
+$large: 1024px;
+$x-large: 1280px;
+// em conversion function default
+$browser-context: 16; // Default

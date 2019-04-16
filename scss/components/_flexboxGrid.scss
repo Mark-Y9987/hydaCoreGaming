@@ -1,0 +1,114 @@
+.container {
+
+	// margin: 0 em(24);
+	@include mq($large) {
+		margin: 0;
+	}
+}
+
+.card {
+	margin: 0 em(12);
+	max-width: 100%;
+}
+
+.wrapper {
+	padding: em(6) 0 em(36) 0;
+	background: rgb(255, 118, 27);
+	background: linear-gradient(153deg, rgba(255, 118, 27, 1) 0%, rgba(51, 0, 255, 1) 100%);
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.grid__col--proj,
+.grid__col--skills {
+	@extend %flexbox;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: em(48);
+
+	@include mq($medium) {
+		width: 80%;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-content: center;
+	}
+
+	@include mq($x-large) {
+		width: 65%;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-content: center;
+	}
+}
+
+.grid__col--proj ul {
+	@include mq($large) {
+		display: flex;
+		align-items: center;
+		margin: 0 auto;
+	}
+
+}
+
+.project-tile {
+	flex: 1 50%;
+	padding: em(12);
+	margin: em(12) auto;
+	// border-radius: 24px;
+}
+
+.project-tile:hover .image--frame {
+	opacity: 0;
+}
+
+.project-tile:hover .overlay {
+	opacity: 1;
+}
+
+.project-photo {
+	position: relative;
+}
+
+.skills--card {
+	padding: em(12);
+	margin: em(12);
+	flex: 1 31%;
+	height: em(260);
+	width: 60%;
+}
+
+.grid__row {
+	@extend %flexbox;
+}
+
+.contact-info li {
+	@include mq($medium) {
+		display: inline-block;
+		margin: em(18);
+	}
+}
+
+.overlay {
+	color: white;
+	font-size: 24px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: rgba(0, 0, 0, .65);
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 50%;
+	left: 50%;
+	border-radius: 24px;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+@include grid__col;
