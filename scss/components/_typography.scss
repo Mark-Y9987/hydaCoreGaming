@@ -8,7 +8,6 @@
 	@extend %centered;
 	font-size: em(24);
 	padding-top: 0;
-
 }
 
 .headline--tertiary {
@@ -55,7 +54,7 @@
 
 #myBtn-2:hover {
 	font-weight: bold;
-	background-color: $color-contrast;
+	background-color: $color-primary;
 	color: white;
 	border-radius: em(8);
 	padding: em(12);

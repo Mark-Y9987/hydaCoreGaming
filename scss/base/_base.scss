@@ -4,8 +4,13 @@
 	box-sizing: border-box;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 a {
 	color: $color-text;
+	text-decoration: none;
 }
 
 body {
@@ -69,11 +74,7 @@ hr {
 }
 
 footer {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding-left: 12px;
-	padding-right: 12px;
+	padding: em(12);
 }
 
 #inline-footer-nav {
@@ -83,6 +84,7 @@ footer {
 #mobile-footer-nav a {
 	text-decoration: none;
 	padding: em(12);
+	text-align: center;
 }
 
 #mobile-footer-nav a:hover {

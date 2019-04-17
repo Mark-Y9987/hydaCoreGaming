@@ -1,4 +1,4 @@
-.img--frame, .sponsors, .img--avatar, .img--github, .img--logo {
+.contact-icons, .img--frame__teams, .img--frame, .sponsors, .img--avatar, .img--github, .img--logo {
   display: block;
 }
 
@@ -16,7 +16,7 @@
   display: block;
 }
 .nav__item a:hover {
-  background-color: #ff9d00;
+  background-color: #4f03a5;
   color: white;
   border-radius: 0.5em;
 }
@@ -33,7 +33,7 @@
   display: block;
 }
 .footer__nav a:hover {
-  background-color: #ff9d00;
+  background-color: #4f03a5;
   color: white;
   border-radius: 0.5em;
 }
@@ -58,8 +58,13 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   color: #4f03a5;
+  text-decoration: none;
 }
 
 body {
@@ -124,11 +129,7 @@ hr {
 }
 
 footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding: 0.75em;
 }
 
 #inline-footer-nav {
@@ -138,6 +139,7 @@ footer {
 #mobile-footer-nav a {
   text-decoration: none;
   padding: 0.75em;
+  text-align: center;
 }
 
 #mobile-footer-nav a:hover {
@@ -308,6 +310,22 @@ body {
   font-size: 1.5em;
 }
 
+.panel:before {
+  content: "";
+  display: block;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.5s ease-in-out;
+}
+
+.panel-open:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+}
+
 .form > .btn--default {
   display: block;
   border: 0;
@@ -476,7 +494,6 @@ body {
   padding: 0.75em;
   margin: 0.75em;
   flex: 1 31%;
-  height: 16.25em;
   width: 60%;
 }
 
@@ -750,10 +767,21 @@ body {
   transition: 0.5s ease;
   backface-visibility: hidden;
 }
-@media (min-width: 1024px) {
-  .img--frame {
-    display: inline-block;
-  }
+
+.img--frame__teams {
+  opacity: 1;
+  width: 12.5em;
+  height: 12.5em;
+  max-width: 100%;
+  margin: 2.25em auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.contact-icons {
+  margin: 1.5em auto;
+  width: 50px;
+  height: 50px;
 }
 
 .header {
@@ -781,6 +809,10 @@ body {
   .grid__col--9.show-mobile {
     display: none;
   }
+}
+
+.footer__nav {
+  text-align: center;
 }
 
 .headline--primary {
@@ -836,7 +868,7 @@ body {
 
 #myBtn-2:hover {
   font-weight: bold;
-  background-color: #0086df;
+  background-color: #ff9d00;
   color: white;
   border-radius: 0.5em;
   padding: 0.75em;
