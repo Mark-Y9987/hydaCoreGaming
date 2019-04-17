@@ -17,6 +17,36 @@
 	padding-top: 0;
 }
 
+#slideout-text {
+	color: white;
+}
+
+.slideout-nav li {
+	margin: em(24);
+	position: relative;
+}
+
+.slideout-nav a:after {
+	background: none repeat scroll 0 0 transparent;
+	bottom: 0;
+	content: "";
+	display: block;
+	height: 2px;
+	left: 50%;
+	position: absolute;
+	background: #fff;
+	transition: width 0.3s ease 0s, left 0.3s ease 0s;
+	width: 0;
+}
+.slideout-nav a:hover:after {
+	width: 100%;
+	left: 0;
+}
+
+.slideout-list-items {
+	color: white;
+}
+
 .list--primary li {
 	color: $color-text-secondary;
 }
@@ -54,7 +84,7 @@
 
 #myBtn-2:hover {
 	font-weight: bold;
-	background-color: $color-primary;
+	background-color: $color-secondary;
 	color: white;
 	border-radius: em(8);
 	padding: em(12);

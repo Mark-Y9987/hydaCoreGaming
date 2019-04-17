@@ -1,4 +1,4 @@
-.contact-icons, .img--frame__teams, .img--frame, .sponsors, .img--avatar, .img--github, .img--logo {
+.contact-icons, .img--frame__roster, .img--frame__teams, .img--frame, .sponsors, .img--avatar, .img--github, .img--logo {
   display: block;
 }
 
@@ -143,7 +143,7 @@ footer {
 }
 
 #mobile-footer-nav a:hover {
-  background-color: #ff9d00;
+  background-color: #4f03a5;
   color: white;
   border-radius: 0.5em;
 }
@@ -270,6 +270,10 @@ body {
   -webkit-overflow-scrolling: touch;
   z-index: 0;
   display: none;
+  background: #ff761b;
+  background: linear-gradient(153deg, #ff761b 0%, #3300ff 100%);
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .slideout-menu-left {
@@ -778,6 +782,17 @@ body {
   backface-visibility: hidden;
 }
 
+.img--frame__roster {
+  opacity: 1;
+  width: 12.5em;
+  height: 15.625em;
+  max-width: 100%;
+  margin: 2.25em auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+  border-radius: 0.75em;
+}
+
 .contact-icons {
   margin: 1.5em auto;
   width: 50px;
@@ -831,6 +846,37 @@ body {
   padding-top: 0;
 }
 
+#slideout-text {
+  color: white;
+}
+
+.slideout-nav li {
+  margin: 1.5em;
+  position: relative;
+}
+
+.slideout-nav a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.slideout-nav a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.slideout-list-items {
+  color: white;
+}
+
 .list--primary li {
   color: #f1bb9c;
 }
@@ -868,7 +914,7 @@ body {
 
 #myBtn-2:hover {
   font-weight: bold;
-  background-color: #ff9d00;
+  background-color: #4f03a5;
   color: white;
   border-radius: 0.5em;
   padding: 0.75em;

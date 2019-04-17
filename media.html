@@ -17,17 +17,17 @@
 
 
   <nav id="menu">
-    <h2>Menu</h2>
-    <ul>
-      <li><a href="http://hydracoregaming.com">Home</a></li>
-      <li><a href="#news">News</a></li>
-      <li>Media</li>
-      <li>Contact</li>
-      <li>Affiliates & Partners</li>
-      <li>Stream Team</li>
-      <!-- <li>Forum</li> -->
-      <li>Members</li>
-      <li>Store</li>
+    <h2 id="slideout-text">Menu</h2>
+    <hr>
+    <ul class="slideout-nav">
+      <li><a class="slideout-list-items" href="index.html">Home</a></li>
+      <li><a class="slideout-list-items" href="#news">News</a></li>
+      <li><a class="slideout-list-items" href="media.html">Media</a></li>
+      <li><a class="slideout-list-items" href="#contact">Contact</a></li>
+      <li><a class="slideout-list-items" href="#sponsors">Sponsors</a></li>
+      <li><a class="slideout-list-items" href="#stream-team">Stream Team</a></li>
+      <li><a class="slideout-list-items" href="#">Forum</a></li>
+      <li><a class="slideout-list-items" href="#">Store</a></li>
     </ul>
   </nav>
 
@@ -106,7 +106,7 @@
 
 
 
-    <div class="grid__row" id="projects">
+    <div class="grid__row" id="sponsors">
 
 
       <h2 class="headline--primary">Sponsors</h2>
@@ -127,10 +127,10 @@
 
 
     <div class="wrapper">
-      <h4 id="skills" class="headline--secondary white">Hydracore Teams</h4>
+      <h4 id="teams" class="headline--secondary white">Hydracore Teams</h4>
       <div class="grid__col--skills">
         <div class="skills--card">
-          <a href="naga.html"><img class="img--frame" src="images/team-naga.png" alt="naga logo">
+          <a href="naga.html"><img class="img--frame__teams" src="images/team-naga.png" alt="naga logo">
           <h3 class="headline--tertiary">Team Naga</h3></a>
           <hr>
           <!-- <h5>Roster</h5>
@@ -144,7 +144,7 @@
           </ul> -->
         </div>
         <div class="skills--card">
-            <a href="fearless.html"><img class="img--frame" src="images/main-logo.png" alt="main logo">
+            <a href="fearless.html"><img class="img--frame__teams" src="images/main-logo.png" alt="main logo">
           <h3 class="headline--tertiary">Team Fearless</h3></a>
           <hr>
           <!-- <h5>Roster</h5>
@@ -156,7 +156,7 @@
             <li>Lotus.HCG</li> -->
         </div>
         <div class="skills--card">
-            <a href="synergy.html"><img class="img--frame" src="images/synergy-logo.png" alt="main logo">
+            <a href="synergy.html"><img class="img--frame__teams" src="images/synergy-logo.png" alt="main logo">
           <h3 class="headline--tertiary">Team Synergy</h3></a>
           <hr>
           <!-- <h5>Roster</h5>
@@ -169,7 +169,7 @@
           </ul> -->
         </div>
         <div class="skills--card">
-            <a href="tranquil.html"><img class="img--frame" src="images/team-tranquil.png" alt="tranquil logo">
+            <a href="tranquil.html"><img class="img--frame__teams" src="images/team-tranquil.png" alt="tranquil logo">
           <h3 class="headline--tertiary">Team Tranquil</h3></a>
           <hr>
           <!-- <h5>Roster</h5>
@@ -182,7 +182,7 @@
           <!-- </ul> -->
         </div>
         <div class="skills--card">
-            <a href="smash.html"><img class="img--frame" src="images/main-logo.png" alt="main logo">
+            <a href="smash.html"><img class="img--frame__teams" src="images/main-logo.png" alt="main logo">
           <h3 class="headline--tertiary">Team Smash</h3></a>
           <hr>
           <!-- <h5>Roster</h5>
@@ -212,7 +212,6 @@
     <hr>
 
     <footer>
-      <h4>Site design by: Mark Young</h4>
       <nav>
         <ul>
           <li id="mobile-footer-nav"><a href="#">Back to top</a></li>
@@ -221,12 +220,14 @@
 
       <nav id="inline-footer-nav">
         <ul>
-          <li class="nav__item"><a href="#about">About Me</a></li>
-          <li class="nav__item"><a href="#projects">Projects</a></li>
-          <li class="nav__item"><a href="#skills">Skills</a></li>
+          <li class="nav__item"><a href="#">Home</a></li>
+          <li class="nav__item"><a href="#news">News</a></li>
+          <li class="nav__item"><a href="#sponsors">Sponsors</a></li>
+          <li class="nav__item"><a href="#teams">Teams</a></li>
           <li class="nav__item"><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+      <h6>Designed by: Mark Young</h6>
     </footer>
   </main>
 
