@@ -1,5 +1,4 @@
 .container {
-	// margin: 0 em(24);
 	@include mq($large) {
 		margin: 0;
 	}
@@ -74,6 +73,11 @@
 	margin: em(12);
 	flex: 1 31%;
 	width: 60%;
+	transition: .4s;
+}
+
+.skills--card:hover {
+	transform: scale(1.1);
 }
 
 .grid__row {

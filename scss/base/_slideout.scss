@@ -72,3 +72,18 @@ body {
 	background-color: rgba(0, 0, 0, .5);
 	z-index: 99;
 }
+
+@media screen and (min-width: 780px) {
+	.slideout-panel {
+		margin-left: 256px;
+	}
+
+	.slideout-menu {
+		display: block;
+		overflow: hidden;
+	}
+
+	.toggle-button {
+		display: none;
+	}
+}

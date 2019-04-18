@@ -18,7 +18,19 @@
 	perspective: 1000px;
 }
 
+.modal {
+	display: flex;
+}
+
+.modal-logo {
+	display: block;
+	margin: em(36) auto;
+	width: 250px;
+	height: 250px;
+}
+
 @keyframes shake {
+
 	10%,
 	90% {
 		transform: translate3d(-1px, 0, 0);
@@ -83,6 +95,15 @@
 	max-width: 100%;
 	margin: em(36) auto;
 	transition: .5s ease;
+	backface-visibility: hidden;
+}
+
+.img--frame__menu {
+	@extend %blocked;
+	opacity: 1;
+	width: em(200);
+	height: em(200);
+
 	backface-visibility: hidden;
 }
 

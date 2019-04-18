@@ -4,6 +4,7 @@
 	padding-bottom: em(16);
 }
 
+
 .headline--secondary {
 	@extend %centered;
 	font-size: em(24);
@@ -19,6 +20,20 @@
 
 #slideout-text {
 	color: white;
+}
+
+.menu-wrapper {
+	position: relative;
+	height: 95vh;
+}
+
+.menu-wrapper img {
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	bottom: 0;
 }
 
 .slideout-nav li {
@@ -38,6 +53,7 @@
 	transition: width 0.3s ease 0s, left 0.3s ease 0s;
 	width: 0;
 }
+
 .slideout-nav a:hover:after {
 	width: 100%;
 	left: 0;
@@ -46,6 +62,8 @@
 .slideout-list-items {
 	color: white;
 }
+
+
 
 .list--primary li {
 	color: $color-text-secondary;

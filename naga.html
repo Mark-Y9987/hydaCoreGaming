@@ -17,95 +17,110 @@
 
 
   <nav id="menu">
-    <h2 id="slideout-text">Menu</h2>
-    <hr>
-    <ul class="slideout-nav">
-      <li><a class="slideout-list-items" href="index.html">Home</a></li>
-      <li><a class="slideout-list-items" href="index.html#teams">Hydracore Teams</a></li>
-      <li><a class="slideout-list-items" href="index.html#news">News</a></li>
-      <li><a class="slideout-list-items" href="media.html">Media</a></li>
-      <li><a class="slideout-list-items" href="index.html#contact">Contact</a></li>
-      <li><a class="slideout-list-items" href="index.html#sponsors">Sponsors</a></li>
-      <li><a class="slideout-list-items" href="#stream-team">Stream Team</a></li>
-      <li><a class="slideout-list-items" href="#">Forum</a></li>
-      <li><a class="slideout-list-items" href="#">Store</a></li>
-    </ul>
+    <div class="menu-wrapper">
+      <h2 id="slideout-text">Menu</h2>
+      <hr>
+      <ul class="slideout-nav">
+        <li><a class="slideout-list-items" href="index.html">Home</a></li>
+        <li><a class="slideout-list-items" href="index.html#news">News</a></li>
+        <li><a class="slideout-list-items" href="index.html#sponsors">Sponsors</a></li>
+        <li><a class="slideout-list-items" href="index.html#teams">Hydracore Teams</a></li>
+        <li><a class="slideout-list-items" href="index.html#contact">Contact</a></li>
+        <li><a class="slideout-list-items" href="media.html">Media</a></li>
+        <li><a class="slideout-list-items" href="#stream-team">Stream Team</a></li>
+        <li><a class="slideout-list-items" href="#">Forum</a></li>
+        <li><a class="slideout-list-items" href="#">Store</a></li>
+      </ul>
+      <img class="img--frame__menu" src="images/main-logo.png" alt="main logo">
+    </div>
   </nav>
 
   <main id="panel">
     <header>
       <button class="toggle-button">☰</button>
-      <img class="img--logo" src="images/team-naga.png" alt="hydracore gaming logo">
-      <h2 class="headline--primary">The Next Evolution in eSports</h2>
+      <img class="img--logo" src="images/team-naga.png" alt="team naga logo">
+      <h2 class="headline--primary">Team Naga</h2>
     </header>
     <div class="wrapper">
-        <div class="grid__col--skills">
-            <div class="skills--card">
-                <a href="naga.html"><img class="img--frame__roster" src="images/zee.png" alt="naga logo">
-                <h3 class="headline--tertiary">ZeeKiwi.HCG</h3></a>
-                <hr>
-            </div>
-            <div class="skills--card">
-                <a href="fearless.html"><img class="img--frame__roster" src="images/flexy.jpg" alt="main logo">
-                <h3 class="headline--tertiary">Flexy.HCG</h3></a>
-                <hr>
-            </div>
-            <div class="skills--card">
-                <a href="synergy.html"><img class="img--frame__roster" src="images/mrv.jpg" alt="main logo">
-                <h3 class="headline--tertiary">MRV2.HCG</h3></a>
-                <hr>
-            </div>
-            <div class="skills--card">
-                <a href="tranquil.html"><img class="img--frame__roster" src="images/kinky.jpg" alt="tranquil logo">
-                <h3 class="headline--tertiary">Kinky.HCG</h3></a>
-                <hr>
-            </div>
-            <div class="skills--card">
-                <a href="smash.html"><img class="img--frame__roster" src="images/murky.jpg" alt="main logo">
-                <h3 class="headline--tertiary">Murky.HCG</h3></a>
-                <hr>
-            </div>
+      <div class="grid__col--skills">
+        <div class="skills--card" id="myBtn">
+          <a href="#ex1" rel="modal:open"><img class="img--frame__roster" src="images/zee.png" alt="naga logo">
+            <h3 class="headline--tertiary">ZeeKiwi.HCG</h3>
+          </a>
+          <hr>
         </div>
-    </div>
-
-    <!-- The Modal -->
-    <!-- <div id="myModal" class="modal"> -->
-
-    <!-- Modal content -->
-    <!-- <div class="modal-content">
-        <div class="modal-header">
-          <span class="close">&times;</span>
-          <h2 class="white">My Resume</h2>
+        <div class="skills--card">
+          <a href="#ex2" rel="modal:open"><img class="img--frame__roster" src="images/flexy.jpg" alt="main logo">
+            <h3 class="headline--tertiary">Flexy.HCG</h3>
+          </a>
+          <hr>
         </div>
-        <div class="modal-body">
-          <img class="img--resume" src="images/resume.jpg" alt="resume">
+        <div class="skills--card">
+          <a href="#ex3" rel="modal:open"><img class="img--frame__roster" src="images/mrv.jpg" alt="main logo">
+            <h3 class="headline--tertiary">MRV2.HCG</h3>
+          </a>
+          <hr>
         </div>
-        <div class="modal-footer">
-          <h3 class="white">Front-End Web Developer</h3>
+        <div class="skills--card">
+          <a href="#ex4" rel="modal:open"><img class="img--frame__roster" src="images/kinky.jpg" alt="tranquil logo">
+            <h3 class="headline--tertiary">Kinky.HCG</h3>
+          </a>
+          <hr>
+        </div>
+        <div class="skills--card">
+          <a href="#ex5" rel="modal:open"><img class="img--frame__roster" src="images/murky.jpg" alt="main logo">
+            <h3 class="headline--tertiary">Murky.HCG</h3>
+          </a>
+          <hr>
         </div>
       </div>
-
     </div>
 
-    <div id="myModal-2" class="modal"> -->
+    <!-- Modal Content -->
 
-    <!-- Modal content -->
-    <!-- <div class="modal-content">
-        <div class="modal-header">
-          <span id="close-2" class="close">&times;</span>
-          <h2 class="white">What is a Web Developer?</h2>
-        </div>
-        <div class="modal-body">
-          <h3>An organism that converts caffeine into code</h3>
-        </div>
-        <div class="modal-footer">
-          <h3 class="white">{ / }</h3>
-        </div>
-      </div>
+    <div id="ex1" class="modal">
+      <img class="modal-logo" src="images/zee_logo.jpg">
+      <p>ZeeKiwi.HCG is a 6-year Army Veteran who spent his time in the military with Special Forces units as a military
+        intelligence professional. He typically goes by the name of "Zee" and is the owner and founder of HydraCore
+        Gaming. Zee is 24 years old and loves guns in real life just as much as he does in video games..</p>
+      <!-- <a href="#" rel="modal:close">Close</a> -->
+    </div>
 
-    </div> -->
+    <div id="ex2" class="modal">
+      <img class="modal-logo" src="images/flexy_logo.png">
+      <p>Flexy.HCG is a 21-year old avid gamer who has been playing video games since the age of 9. He has logged over
+        2,000 hours on R6S and has an ultimate dream of going pro-league. Flexy, also known as Kyle, is a born again
+        gamer and has decided to move forward from his toxic....toxic past. More to come from this guy in the future!
+      </p>
+      <!-- <a href="#" rel="modal:close">Close</a> -->
+    </div>
 
+    <div id="ex3" class="modal">
+      <img class="modal-logo" src="images/flexy_logo.png">
+      <p>MRV2.HCG is a 21 year old gamer who also loves to play sports as well. He is one of two resident Canadian HCG
+        members and has high aspirations within the competitive Siege scene. Although new to the game, he has shown
+        great promise in ability to drop high kill count and an absolutely amazing support capability. He is excited for
+        the prospect of Naga to become a CL team in the very near future.
+      </p>
+      <!-- <a href="#" rel="modal:close">Close</a> -->
+    </div>
 
+    <div id="ex4" class="modal">
+      <img class="modal-logo" src="images/flexy_logo.png">
+      <p>Kinky.HCG is a goofy, fun, and dedicated player. Competed in R6S for 3 years and has been playing since beta.
+        Switched to PC after 2 years and console play. Randy "Kinky" Woodward constantly practices and aims fo be the
+        best player he can be . He is an Agent of Impact for Hope For The Day. It's Ok to not be ok <3. </p> <!-- <a
+          href="#" rel="modal:close">Close</a> -->
+    </div>
+
+    <div id="ex5" class="modal">
+      <img class="modal-logo" src="images/flexy_logo.png">
+      <p>Murky is a very goofy and fun to be around 24 year old that has had a love and passion for Rainbow Six Siege
+        ever since day it was annouced at E3. He first started to play the game on console and the game suckered him
+        into building his own PC. Dalton ''Murky" Adams has always wanted to play the game and learn something new every
+        time he gets on.</p>
+      <!-- <a href="#" rel="modal:close">Close</a> -->
+    </div>
 
 
 
@@ -113,10 +128,13 @@
     <p>If you're interested in joining a team or want more information about the orginazation, we'd love to hear from
       you!</p>
     <ul class="contact-info">
-      <li><a href="https://discord.gg/3ZbUXDt" target="_blank"><img class="contact-icons" src="images/discord-icon.png"></a></li>
-      <li><a href="mailto:HydraCoreGaming@gmail.com" target="_blank"><img class="contact-icons" src="images/email-icon.png"></a>
+      <li><a href="https://discord.gg/3ZbUXDt" target="_blank"><img class="contact-icons"
+            src="images/discord-icon.png"></a></li>
+      <li><a href="mailto:HydraCoreGaming@gmail.com" target="_blank"><img class="contact-icons"
+            src="images/email-icon.png"></a>
       </li>
-      <li><a href="https://twitter.com/hydracoregaming" target="_blank"><img class="contact-icons" src="images/twitter-icon.png"></a></li>
+      <li><a href="https://twitter.com/hydracoregaming" target="_blank"><img class="contact-icons"
+            src="images/twitter-icon.png"></a></li>
     </ul>
     </div>
     <hr>
@@ -143,7 +161,9 @@
 
 
 
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
   <script src="JS/main.js"></script>
   <script>
@@ -160,21 +180,28 @@
     });
 
     function close(eve) {
-  eve.preventDefault();
-  slideout.close();
-}
+      eve.preventDefault();
+      slideout.close();
+    }
 
-slideout
-  .on('beforeopen', function() {
-    this.panel.classList.add('panel-open');
-  })
-  .on('open', function() {
-    this.panel.addEventListener('click', close);
-  })
-  .on('beforeclose', function() {
-    this.panel.classList.remove('panel-open');
-    this.panel.removeEventListener('click', close);
-  });
+    slideout
+      .on('beforeopen', function () {
+        this.panel.classList.add('panel-open');
+      })
+      .on('open', function () {
+        this.panel.addEventListener('click', close);
+      })
+      .on('beforeclose', function () {
+        this.panel.classList.remove('panel-open');
+        this.panel.removeEventListener('click', close);
+      });
+
+    $('a.open-modal').click(function (event) {
+      $(this).modal({
+        fadeDuration: 250
+      });
+      return false;
+    });
   </script>
 
 </body>

@@ -1,4 +1,4 @@
-.contact-icons, .img--frame__roster, .img--frame__teams, .img--frame, .sponsors, .img--avatar, .img--github, .img--logo {
+.contact-icons, .img--frame__roster, .img--frame__teams, .img--frame__menu, .img--frame, .sponsors, .img--avatar, .img--github, .img--logo {
   display: block;
 }
 
@@ -59,6 +59,7 @@
 }
 
 html {
+  background-color: #e9e9e9;
   scroll-behavior: smooth;
 }
 
@@ -111,16 +112,6 @@ p {
   color: #4f03a5;
   margin: 0.75em 0.75em;
 }
-@media (min-width: 768px) {
-  p {
-    margin: 0.75em 4.75em;
-  }
-}
-@media (min-width: 1280px) {
-  p {
-    margin: 0.75em 18.75em;
-  }
-}
 
 hr {
   border: 0;
@@ -162,99 +153,6 @@ footer {
     display: none;
   }
 }
-/* The Modal (background) */
-.modal {
-  display: none;
-  /* Hidden by default */
-  position: fixed;
-  /* Stay in place */
-  z-index: 1;
-  /* Sit on top */
-  padding-top: 100px;
-  /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%;
-  /* Full width */
-  height: 100%;
-  /* Full height */
-  overflow: auto;
-  /* Enable scroll if needed */
-  background-color: black;
-  /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4);
-  /* Black w/ opacity */
-}
-
-/* Modal Content */
-.modal-content {
-  position: relative;
-  background-color: #fefefe;
-  margin: auto;
-  padding: 0;
-  border: 1px solid #888;
-  width: 80%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  -webkit-animation-name: animatetop;
-  -webkit-animation-duration: 0.4s;
-  animation-name: animatetop;
-  animation-duration: 0.4s;
-}
-
-/* Add Animation */
-@-webkit-keyframes animatetop {
-  from {
-    top: -300px;
-    opacity: 0;
-  }
-  to {
-    top: 0;
-    opacity: 1;
-  }
-}
-@keyframes animatetop {
-  from {
-    top: -300px;
-    opacity: 0;
-  }
-  to {
-    top: 0;
-    opacity: 1;
-  }
-}
-/* The Close Button */
-.close {
-  color: white;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.modal-header {
-  padding: 2px 16px;
-  background-color: #0086df;
-  color: white;
-}
-
-.modal-body {
-  padding: 2px 16px;
-  width: 100%;
-  margin: auto;
-}
-
-.modal-footer {
-  padding: 2px 16px;
-  background-color: #0086df;
-  color: white;
-}
-
 body {
   width: 100%;
   height: 100%;
@@ -330,6 +228,20 @@ body {
   z-index: 99;
 }
 
+@media screen and (min-width: 780px) {
+  .slideout-panel {
+    margin-left: 256px;
+  }
+
+  .slideout-menu {
+    display: block;
+    overflow: hidden;
+  }
+
+  .toggle-button {
+    display: none;
+  }
+}
 .form > .btn--default {
   display: block;
   border: 0;
@@ -499,6 +411,11 @@ body {
   margin: 0.75em;
   flex: 1 31%;
   width: 60%;
+  transition: 0.4s;
+}
+
+.skills--card:hover {
+  transform: scale(1.1);
 }
 
 @media (min-width: 768px) {
@@ -717,6 +634,17 @@ body {
   perspective: 1000px;
 }
 
+.modal {
+  display: flex;
+}
+
+.modal-logo {
+  display: block;
+  margin: 2.25em auto;
+  width: 250px;
+  height: 250px;
+}
+
 @keyframes shake {
   10%, 90% {
     transform: translate3d(-1px, 0, 0);
@@ -769,6 +697,13 @@ body {
   max-width: 100%;
   margin: 2.25em auto;
   transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.img--frame__menu {
+  opacity: 1;
+  width: 12.5em;
+  height: 12.5em;
   backface-visibility: hidden;
 }
 
@@ -848,6 +783,20 @@ body {
 
 #slideout-text {
   color: white;
+}
+
+.menu-wrapper {
+  position: relative;
+  height: 95vh;
+}
+
+.menu-wrapper img {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .slideout-nav li {

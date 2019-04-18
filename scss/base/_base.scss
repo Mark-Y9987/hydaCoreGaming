@@ -1,10 +1,10 @@
 * {
 	font-family: $font-family;
-	// color: $color-text;
 	box-sizing: border-box;
 }
 
 html {
+	background-color: $color-background;
 	scroll-behavior: smooth;
 }
 
@@ -57,14 +57,6 @@ p {
 	color: $color-text;
 	margin: em(12) em(12);
 	@extend %centered;
-
-	@include mq($medium) {
-		margin: em(12) em(76);
-	}
-
-	@include mq($x-large) {
-		margin: em(12) em(300);
-	}
 }
 
 hr {
