@@ -734,6 +734,10 @@ body {
   height: 50px;
 }
 
+.highlight-videos {
+  margin: 3em auto;
+}
+
 .header {
   display: none;
 }
