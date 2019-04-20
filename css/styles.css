@@ -1,4 +1,4 @@
-.contact-icons, .img--frame__roster, .img--frame__teams, .img--frame__menu, .img--frame, .sponsors, .img--avatar, .img--github, .img--logo {
+.contact-icons, .img--frame__roster, .img--frame__store, .img--frame__teams, .img--frame__menu, .img--frame, .sponsors, .img--avatar, .img--github, .img--logo {
   display: block;
 }
 
@@ -414,7 +414,18 @@ body {
   transition: 0.4s;
 }
 
+.skills--card__store {
+  padding: 0.75em;
+  margin: 0.75em;
+  flex: 1 47%;
+  transition: 0.4s;
+}
+
 .skills--card:hover {
+  transform: scale(1.1);
+}
+
+.skills--card__store:hover {
   transform: scale(1.1);
 }
 
@@ -711,6 +722,14 @@ body {
   opacity: 1;
   width: 12.5em;
   height: 12.5em;
+  max-width: 100%;
+  margin: 2.25em auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.img--frame__store {
+  opacity: 1;
   max-width: 100%;
   margin: 2.25em auto;
   transition: 0.5s ease;

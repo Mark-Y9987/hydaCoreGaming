@@ -76,7 +76,18 @@
 	transition: .4s;
 }
 
+.skills--card__store {
+	padding: em(12);
+	margin: em(12);
+	flex: 1 47%;
+	transition: .4s;
+}
+
 .skills--card:hover {
+	transform: scale(1.1);
+}
+
+.skills--card__store:hover {
 	transform: scale(1.1);
 }
 
