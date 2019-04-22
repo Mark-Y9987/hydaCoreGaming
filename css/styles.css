@@ -745,6 +745,10 @@ body {
   margin: 3em auto;
 }
 
+.highlight-videos iframe {
+  max-width: 100%;
+}
+
 .header {
   display: none;
 }

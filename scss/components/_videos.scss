@@ -1,3 +1,7 @@
 .highlight-videos {
-    margin: em(48) auto;
+	margin: em(48) auto;
+}
+
+.highlight-videos iframe {
+	max-width: 100%;
 }
