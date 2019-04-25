@@ -656,6 +656,12 @@ body {
   height: 250px;
 }
 
+.modal-sponsor {
+  display: block;
+  margin: 2.25em auto;
+  max-width: 100%;
+}
+
 @keyframes shake {
   10%, 90% {
     transform: translate3d(-1px, 0, 0);
@@ -701,9 +707,15 @@ body {
 
 .img--frame__menu {
   opacity: 1;
-  width: 12.5em;
-  height: 12.5em;
+  width: 6.25em;
+  height: 6.25em;
   backface-visibility: hidden;
+}
+@media (min-width: 1024px) {
+  .img--frame__menu {
+    width: 12.5em;
+    height: 12.5em;
+  }
 }
 
 .img--frame__teams {
@@ -742,12 +754,27 @@ body {
 }
 
 .highlight-videos {
-  margin: 3em auto;
+  margin: 2.25em;
+}
+@media (min-width: 1024px) {
+  .highlight-videos {
+    margin: 2.25em 17.1875em;
+  }
 }
 
-.highlight-videos iframe {
+.video-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
   width: 100%;
-  height: auto;
+  position: absolute;
 }
 
 .header {
@@ -869,6 +896,10 @@ body {
 
 .white {
   color: white;
+}
+
+.white a {
+  text-decoration: underline;
 }
 
 .link {

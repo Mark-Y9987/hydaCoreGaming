@@ -29,6 +29,12 @@
 	height: 250px;
 }
 
+.modal-sponsor {
+	display: block;
+	margin: em(36) auto;
+	max-width: 100%;
+}
+
 @keyframes shake {
 
 	10%,
@@ -79,6 +85,7 @@
 	}
 }
 
+
 .img--frame {
 	@extend %blocked;
 	opacity: 1;
@@ -92,10 +99,14 @@
 .img--frame__menu {
 	@extend %blocked;
 	opacity: 1;
-	width: em(200);
-	height: em(200);
-
+	width: em(100);
+	height: em(100);
 	backface-visibility: hidden;
+
+	@include mq($large) {
+		width: em(200);
+		height: em(200);
+	}
 }
 
 .img--frame__teams {

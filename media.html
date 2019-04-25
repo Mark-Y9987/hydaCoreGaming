@@ -25,7 +25,7 @@
         <li><a class="slideout-list-items" href="index.html#news">News</a></li>
         <li><a class="slideout-list-items" href="index.html#about">About</a></li>
         <li><a class="slideout-list-items" href="index.html#teams">Hydracore Teams</a></li>
-        <li><a class="slideout-list-items" href="index.html#contact">Contact</a></li>
+        <li><a class="slideout-list-items" href="#contact">Contact</a></li>
         <li><a class="slideout-list-items" href="media.html">Media</a></li>
         <li><a class="slideout-list-items" href="sponsors.html">Sponsors</a></li>
         <!-- <li><a class="slideout-list-items" href="#stream-team">Stream Team</a></li>
@@ -50,24 +50,31 @@
 
 
             <ul class="list--primary">
-              <li class="highlight-videos"><iframe width="560" height="315"
-                  src="https://www.youtube.com/embed/m2XTqRLsFkw" frameborder="0"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen></iframe>
+              <li class="highlight-videos">
+                <div class="video-responsive">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/m2XTqRLsFkw" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
               </li>
-              <li class="highlight-videos"><iframe width="560" height="315"
-                  src="https://www.youtube.com/embed/stBbY2vqNw4" frameborder="0"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen></iframe>
+              <li class="highlight-videos">
+                <div class="video-responsive">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/stBbY2vqNw4" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
               </li>
-              <li class="highlight-videos"><iframe width="560" height="315"
-                  src="https://www.youtube.com/embed/pfT-yujmQBw" frameborder="0"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen></iframe>
+              <li class="highlight-videos">
+                <div class="video-responsive">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/pfT-yujmQBw" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
               </li>
             </ul>
 
-            <h3 class="headline--secondary"><a href="#">View More</a></h3>
+            <h3 class="headline--secondary"><a class="white"
+                href="https://www.youtube.com/channel/UCkq9cgpLhQo-7wlFyGwkU_w" target="_blank">View More</a></h3>
             </ul>
           </div>
         </div>
@@ -117,39 +124,12 @@
 
 
 
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
   <script src="JS/main.js"></script>
-  <script>
-    var slideout = new Slideout({
-      'panel': document.getElementById('panel'),
-      'menu': document.getElementById('menu'),
-      'padding': 256,
-      'tolerance': 70
-    });
 
-    // Toggle button
-    document.querySelector('.toggle-button').addEventListener('click', function () {
-      slideout.toggle();
-    });
-
-    function close(eve) {
-      eve.preventDefault();
-      slideout.close();
-    }
-
-    slideout
-      .on('beforeopen', function () {
-        this.panel.classList.add('panel-open');
-      })
-      .on('open', function () {
-        this.panel.addEventListener('click', close);
-      })
-      .on('beforeclose', function () {
-        this.panel.classList.remove('panel-open');
-        this.panel.removeEventListener('click', close);
-      });
-  </script>
 
 </body>
 

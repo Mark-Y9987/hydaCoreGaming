@@ -25,7 +25,7 @@
         <li><a class="slideout-list-items" href="index.html#news">News</a></li>
         <li><a class="slideout-list-items" href="index.html#about">About</a></li>
         <li><a class="slideout-list-items" href="index.html#teams">Hydracore Teams</a></li>
-        <li><a class="slideout-list-items" href="index.html#contact">Contact</a></li>
+        <li><a class="slideout-list-items" href="#contact">Contact</a></li>
         <li><a class="slideout-list-items" href="media.html">Media</a></li>
         <li><a class="slideout-list-items" href="sponsors.html">Sponsors</a></li>
         <!-- <li><a class="slideout-list-items" href="#stream-team">Stream Team</a></li>
@@ -42,38 +42,20 @@
       <img class="img--logo" src="images/main-logo.png" alt="hydracore gaming logo">
       <h2 class="headline--primary">The Next Evolution in eSports</h2>
     </header>
+
+
+
+
     <div class="wrapper">
       <div class="grid__row" id="news">
         <div class="grid__col--12">
           <div class="card">
-            <h4 class="headline--secondary white">Upcoming Tournaments</h4>
 
-            <h3 class="headline--tertiary">Team Naga</h3>
-            <ul class="list--primary">
-              <li>Go4R6 (PC) North America Cup #148
-                <p>Sunday, 13JAN19 @ 1700 EST</p>
-              </li>
-              <li>Go4R6 (PC) North America Cup #149
-                <p>Sunday, 20JAN19 @ 1700 EST</p>
-              </li>
-            </ul>
-            <h3 class="headline--tertiary">Team Fearless</h3>
-            <ul class="list--primary">
-              <li>Go4R6 (PC) North America Cup #153
-                <p>Sunday, 02FEB19 @ 1700 EST</p>
-              </li>
-              <li>Go4R6 (PC) North America Cup #149
-                <p>Sunday, 24FEB19 @ 1700 EST</p>
-              </li>
-              <h3 class="headline--secondary"><a href="#">View More</a></h3>
-            </ul>
           </div>
         </div>
       </div>
     </div>
-
-
-
+    </div>
 
 
     <div class="grid__row" id="about">
@@ -82,9 +64,9 @@
       <h2 class="headline--primary">About</h2>
       <div class="grid__col--proj">
         <img class="img--banner" src="images/siege-background.png">
-        <p>Hydracore Gaming was founded by Jamie Zudonyi, aka "ZeeKiwi" in 2017. The orginazation has continued to grow
+        <p>HydraCore Gaming was founded by Jamie Zudonyi, aka "ZeeKiwi" in 2017. The organization has continued to grow
           over the last few years under Jamie's professional leadership. With Jamie's charismatic personality and
-          steadfast dedication to the team and community, Hydracore has seen an explosion of followers in a short period
+          steadfast dedication to the team and community, HydraCore has seen an explosion of followers in a short period
           of time. In the coming months and years, Hydracore gaming aims to become a contender in the pro league arena.
         </p>
       </div>
@@ -102,8 +84,8 @@
           <hr>
         </div>
         <div class="skills--card">
-          <a href="fearless.html"><img class="img--frame__teams" src="images/main-logo.png" alt="main logo">
-            <h3 class="headline--tertiary">Team Fearless</h3>
+          <a href="turbulent.html"><img class="img--frame__teams" src="images/main-logo.png" alt="main logo">
+            <h3 class="headline--tertiary">Team Turbulent</h3>
           </a>
           <hr>
         </div>
@@ -166,39 +148,12 @@
 
 
 
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="JS/main.js"></script>
-  <script>
-    var slideout = new Slideout({
-      'panel': document.getElementById('panel'),
-      'menu': document.getElementById('menu'),
-      'padding': 256,
-      'tolerance': 70
-    });
-
-    // Toggle button
-    document.querySelector('.toggle-button').addEventListener('click', function () {
-      slideout.toggle();
-    });
-
-    function close(eve) {
-      eve.preventDefault();
-      slideout.close();
-    }
-
-    slideout
-      .on('beforeopen', function () {
-        this.panel.classList.add('panel-open');
-      })
-      .on('open', function () {
-        this.panel.addEventListener('click', close);
-      })
-      .on('beforeclose', function () {
-        this.panel.classList.remove('panel-open');
-        this.panel.removeEventListener('click', close);
-      });
-  </script>
 
 </body>
 
