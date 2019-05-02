@@ -33,7 +33,10 @@
 	display: block;
 	margin: em(36) auto;
 	max-width: 100%;
+	transition-duration: .4s;
 }
+
+
 
 @keyframes shake {
 
@@ -59,8 +62,6 @@
 	}
 }
 
-
-
 .img--avatar {
 	@extend %blocked;
 	margin: 0 auto;
@@ -77,6 +78,7 @@
 
 .sponsors {
 	@extend %blocked;
+	transition: .5s ease;
 
 	@include mq($large) {
 		display: inline-block;
@@ -85,6 +87,9 @@
 	}
 }
 
+.sponsors:hover {
+	transform: scale(1.1);
+}
 
 .img--frame {
 	@extend %blocked;
@@ -142,8 +147,8 @@
 }
 
 .contact-icons {
-	@extend %blocked;
-	margin: em(24) auto;
-	width: 50px;
-	height: 50px;
+	display: inline-block;
+	margin: em(24);
+	width: 40px;
+	height: 40px;
 }

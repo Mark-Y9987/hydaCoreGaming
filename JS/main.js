@@ -27,14 +27,12 @@ slideout
         this.panel.removeEventListener('click', close);
     });
 
-$(document).ready(function () {
-    $('.single-item').slick({});
-
-});
-
-$('.autoplay').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
+$(function () {
+    $(".rslides").responsiveSlides({
+        auto: true,
+        speed: 500,
+        timeout: 4000,
+        nav: false,
+        pause: true,
+    });
 });

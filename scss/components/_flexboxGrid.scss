@@ -1,16 +1,21 @@
 .container {
 	@include mq($large) {
 		margin: 0;
+
 	}
 }
 
 .card {
-	margin: 0 em(12);
 	max-width: 100%;
+	margin: em(12);
+
+	@include mq($large) {
+		margin: em(64);
+	}
 }
 
 .wrapper {
-	padding: em(6) 0 em(36) 0;
+	padding: em(6) 0;
 	background: rgb(255, 118, 27);
 	background: linear-gradient(153deg, rgba(255, 118, 27, 1) 0%, rgba(51, 0, 255, 1) 100%);
 	background-attachment: fixed;
