@@ -1,16 +1,15 @@
 // Buttons
 
-@mixin btn-mobile(
-    $display: block,
-    $border: 0,
-    $padding: em(12),
-    $margin: em(36) auto,
-    $background-color,
-    $color: white,
-    $border-radius: em(8),
-    $width: 100%,
-    $font-size: em(16),
-    $font-weight: bold) {
+@mixin btn-mobile($display: block,
+	$border: 0,
+	$padding: em(12),
+	$margin: em(36) auto,
+	$background-color,
+	$color: white,
+	$border-radius: em(8),
+	$width: 100%,
+	$font-size: em(16),
+	$font-weight: bold) {
 	display: $display;
 	border: $border;
 	padding: $padding;
@@ -23,19 +22,21 @@
 	font-weight: $font-weight;
 }
 
-@mixin buttons {
-	@each $type, $color in $btn-colors {
-		.grid__col--12 > .btn--#{$type} {
-			@include btn-mobile($background-color: $color);
-			//     @include mq($large) {
-			//         @include btn-mobile($display: inline-block,
-			//                             $margin: em(36) em(6),
-			//                             $background-color: $color,
-			//                             $width: 17%);
-			// }
-		}
-	}
-}
+// @mixin buttons {
+
+// 	@each $type,
+// 	$color in $btn-colors {
+// 		.grid__col--12>.btn--#{$type} {
+// 			@include btn-mobile($background-color: $color);
+// 			//     @include mq($large) {
+// 			//         @include btn-mobile($display: inline-block,
+// 			//                             $margin: em(36) em(6),
+// 			//                             $background-color: $color,
+// 			//                             $width: 17%);
+// 			// }
+// 		}
+// 	}
+// }
 
 // Media Queries
 
@@ -50,22 +51,40 @@
 // General Grid Layout
 
 @mixin grid__col {
-	@each $number, $color in $grid-colors {
-		.grid__col--#{$number} {
-			@include btn-mobile($margin: 0,
-                                $padding: 0,
-                                $background-color: none,
-                                $color: $color-text,
-                                );
-		}
-		.grid__col--9 {
-			width: 100%;
-			margin: auto;
-		}
-		@include mq($large) {
-			.grid__col--12 {
-				text-align: center;
-			}
+	.grid__col--12 {
+		// @include btn-mobile($margin: 0,
+		// 	$padding: 0,
+		// 	$background-color: none,
+		// 	$color: $color-text,
+		// );
+	}
+
+	@include mq($large) {
+		.grid__col--12 {
+			text-align: center;
 		}
 	}
 }
+
+
+
+// @mixin grid__col {
+// 	@each $number, $color in $grid-colors {
+// 		.grid__col--#{$number} {
+// 			@include btn-mobile($margin: 0,
+//                                 $padding: 0,
+//                                 $background-color: none,
+//                                 $color: $color-text,
+//                                 );
+// 		}
+// 		.grid__col--9 {
+// 			width: 100%;
+// 			margin: auto;
+// 		}
+// 		@include mq($large) {
+// 			.grid__col--12 {
+// 				text-align: center;
+// 			}
+// 		}
+// 	}
+// }

@@ -1,11 +1,11 @@
-.form > .btn--default {
-	@include btn-mobile($margin: em(36) em(12),
-                        $background-color: $color-secondary,);
-	@include mq($large) {
-		@include btn-mobile($display: inline-block,
-                                $margin: em(36) em(0), 
-                                $background-color: $color-secondary);
-	}
-}
+// .form > .btn--default {
+// 	@include btn-mobile($margin: em(36) em(12),
+//                         $background-color: $color-secondary,);
+// 	@include mq($large) {
+// 		@include btn-mobile($display: inline-block,
+//                                 $margin: em(36) em(0), 
+//                                 $background-color: $color-secondary);
+// 	}
+// }
 
-@include buttons;
+// @include buttons;
