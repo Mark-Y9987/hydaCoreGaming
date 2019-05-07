@@ -14,6 +14,11 @@
     width: 100%;
     left: 0;
     top: 0;
+    text-align: left;
+}
+
+.rslides p {
+    text-align: left;
 }
 
 .rslides li:first-child {
@@ -22,10 +27,30 @@
     float: left;
 }
 
-.rslides img {
+.rslides .news--large {
+    display: none;
+
+    @include mq($large) {
+        display: block;
+        height: auto;
+        // float: left;
+        margin: auto;
+        width: 100%;
+        border: 0;
+        height: auto;
+    }
+}
+
+.rslides .news--mobile {
     display: block;
     height: auto;
-    float: left;
-    width: 100%;
+    // float: left;
+    margin: auto;
+    width: auto;
     border: 0;
+    height: 250px;
+
+    @include mq($large) {
+        display: none;
+    }
 }

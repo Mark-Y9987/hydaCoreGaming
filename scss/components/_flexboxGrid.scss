@@ -10,7 +10,7 @@
 	margin: em(12);
 
 	@include mq($large) {
-		margin: em(64);
+		margin: em(64) em(300);
 	}
 }
 
