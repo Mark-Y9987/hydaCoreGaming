@@ -47,8 +47,7 @@
 	}
 }
 
-.grid__col--proj,
-.grid__col--skills {
+.grid__col--store {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -61,7 +60,7 @@
 
 	@include mq($medium) {
 		flex-direction: row;
-		width: 65%;
+		width: 80%;
 		flex-wrap: wrap;
 		justify-content: space-between;
 		align-content: center;
@@ -75,6 +74,37 @@
 		justify-content: space-between;
 		align-content: center;
 		align-items: stretch;
+	}
+}
+
+.grid__col--proj,
+.grid__col--skills {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: em(48);
+	margin-top: em(48);
+
+	@include mq($medium) {
+		flex-direction: column;
+		width: 80%;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-content: center;
+		align-items: center;
+	}
+
+	@include mq($x-large) {
+		width: 65%;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-content: center;
+		align-items: center;
 	}
 }
 
@@ -118,7 +148,7 @@
 }
 
 .skills--card__store {
-	padding: em(12);
+	padding: em(6);
 	margin: em(12);
 	flex: 1 22%;
 	transition: .4s;
