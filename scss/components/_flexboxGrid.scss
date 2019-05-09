@@ -1,7 +1,6 @@
 .container {
 	@include mq($large) {
 		margin: 0;
-
 	}
 }
 
@@ -55,8 +54,6 @@
 	}
 }
 
-
-
 .project-tile {
 	flex: 1 50%;
 	padding: em(12);
@@ -87,8 +84,9 @@
 .skills--card__store {
 	padding: em(12);
 	margin: em(12);
-	flex: 1 47%;
+	flex: 1 22%;
 	transition: .4s;
+	border: solid 2px white;
 }
 
 .skills--card:hover {

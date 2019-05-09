@@ -338,8 +338,9 @@ body {
 .skills--card__store {
   padding: 0.75em;
   margin: 0.75em;
-  flex: 1 47%;
+  flex: 1 22%;
   transition: 0.4s;
+  border: solid 2px white;
 }
 
 .skills--card:hover {
@@ -376,19 +377,6 @@ body {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
-}
-
-.grid__col--12 {
-  display: block;
-  border: 0;
-  padding: 0;
-  margin: 0;
-  background-color: none;
-  color: #4f03a5;
-  border-radius: 0.5em;
-  width: 100%;
-  font-size: 1em;
-  font-weight: bold;
 }
 
 @media (min-width: 1024px) {
