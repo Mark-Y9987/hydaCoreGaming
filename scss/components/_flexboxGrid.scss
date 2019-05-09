@@ -78,7 +78,9 @@
 	margin: em(12);
 	flex: 1 31%;
 	width: 60%;
+	border: solid 2px white;
 	transition: .4s;
+	border-radius: em(6);
 }
 
 .skills--card__store {
@@ -87,14 +89,19 @@
 	flex: 1 22%;
 	transition: .4s;
 	border: solid 2px white;
+	border-radius: em(6);
 }
 
 .skills--card:hover {
-	transform: scale(1.1);
+	@include mq($large) {
+		transform: scale(1.1);
+	}
 }
 
 .skills--card__store:hover {
-	transform: scale(1.1);
+	@include mq($large) {
+		transform: scale(1.1);
+	}
 }
 
 .grid__row {

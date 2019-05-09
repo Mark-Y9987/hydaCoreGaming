@@ -332,7 +332,9 @@ body {
   margin: 0.75em;
   flex: 1 31%;
   width: 60%;
+  border: solid 2px white;
   transition: 0.4s;
+  border-radius: 0.375em;
 }
 
 .skills--card__store {
@@ -341,14 +343,19 @@ body {
   flex: 1 22%;
   transition: 0.4s;
   border: solid 2px white;
+  border-radius: 0.375em;
 }
 
-.skills--card:hover {
-  transform: scale(1.1);
+@media (min-width: 1024px) {
+  .skills--card:hover {
+    transform: scale(1.1);
+  }
 }
 
-.skills--card__store:hover {
-  transform: scale(1.1);
+@media (min-width: 1024px) {
+  .skills--card__store:hover {
+    transform: scale(1.1);
+  }
 }
 
 @media (min-width: 768px) {
@@ -519,7 +526,7 @@ body {
   margin: 2.25em auto;
   transition: 0.5s ease;
   backface-visibility: hidden;
-  border-radius: 0.75em;
+  border-radius: 0.375em;
 }
 
 .contact-icons {
@@ -587,11 +594,11 @@ body {
 }
 
 .highlight-videos {
-  margin: 2.25em;
+  margin: 2.25em 0;
 }
 @media (min-width: 1024px) {
   .highlight-videos {
-    margin: 2.25em 17.1875em;
+    margin: 2.25em 3em;
   }
 }
 

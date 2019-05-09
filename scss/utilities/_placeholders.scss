@@ -19,17 +19,20 @@
 
 %nav {
 	margin: em(6) auto;
+
 	& a {
 		text-decoration: none;
 		width: 100%;
 		padding: em(12);
 		display: block;
 	}
+
 	& a:hover {
 		background-color: $color-secondary;
 		color: white;
 		border-radius: em(8);
 	}
+
 	@include mq($large) {
 		display: inline-block;
 		align-items: center;
@@ -42,11 +45,13 @@
 		padding: em(12);
 		display: block;
 	}
+
 	& a:hover {
 		background-color: $color-secondary;
 		color: white;
 		border-radius: em(8);
 	}
+
 	@include mq($large) {
 		display: inline-block;
 		align-items: center;

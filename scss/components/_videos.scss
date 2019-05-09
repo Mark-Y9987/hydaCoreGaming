@@ -1,8 +1,8 @@
 .highlight-videos {
-	margin: em(36);
+	margin: em(36) 0;
 
 	@include mq($large) {
-		margin: em(36) em(275);
+		margin: em(36) em(48);
 	}
 }
 
