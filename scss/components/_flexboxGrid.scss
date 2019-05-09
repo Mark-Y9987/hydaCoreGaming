@@ -9,7 +9,11 @@
 	margin: em(12);
 
 	@include mq($large) {
-		margin: em(64) em(300);
+		margin: em(64) em(120);
+	}
+
+	@include mq($x-x-large) {
+		margin: em(64) em(220);
 	}
 }
 
@@ -21,16 +25,14 @@
 	background-size: cover;
 }
 
-.grid__col--proj,
-.grid__col--skills {
-	@extend %flexbox;
+.grid__col--about {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: em(48);
 
 	@include mq($medium) {
-		width: 80%;
 		flex-direction: row;
+		width: 65%;
 		flex-wrap: wrap;
 		justify-content: space-between;
 		align-content: center;
@@ -45,10 +47,42 @@
 	}
 }
 
+.grid__col--proj,
+.grid__col--skills {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: stretch;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: em(48);
+	margin-top: em(48);
+
+	@include mq($medium) {
+		flex-direction: row;
+		width: 65%;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-content: center;
+		align-items: stretch;
+	}
+
+	@include mq($x-large) {
+		width: 65%;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-content: center;
+		align-items: stretch;
+	}
+}
+
 .grid__col--proj ul {
 	@include mq($large) {
 		display: flex;
 		align-items: center;
+		justify-content: center;
 		margin: 0 auto;
 		flex-wrap: wrap;
 	}
@@ -90,6 +124,7 @@
 	transition: .4s;
 	border: solid 2px white;
 	border-radius: em(6);
+
 }
 
 .skills--card:hover {

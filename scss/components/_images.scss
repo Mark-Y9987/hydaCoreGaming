@@ -79,9 +79,11 @@
 
 .sponsors {
 	@extend %blocked;
+	margin-left: em(24);
+	margin-right: em(24);
 	transition: .5s ease;
 
-	@include mq($large) {
+	@include mq($x-large) {
 		display: inline-block;
 		margin-left: em(24);
 		margin-right: em(24);

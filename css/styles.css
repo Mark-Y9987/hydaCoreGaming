@@ -44,8 +44,7 @@
   }
 }
 
-.grid__row, .grid__col--proj,
-.grid__col--skills {
+.grid__row {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -261,7 +260,12 @@ body {
 }
 @media (min-width: 1024px) {
   .card {
-    margin: 4em 18.75em;
+    margin: 4em 7.5em;
+  }
+}
+@media (min-width: 1440px) {
+  .card {
+    margin: 4em 13.75em;
   }
 }
 
@@ -273,25 +277,22 @@ body {
   background-size: cover;
 }
 
-.grid__col--proj,
-.grid__col--skills {
+.grid__col--about {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 3em;
 }
 @media (min-width: 768px) {
-  .grid__col--proj,
-.grid__col--skills {
-    width: 80%;
+  .grid__col--about {
     flex-direction: row;
+    width: 65%;
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: center;
   }
 }
-@media (min-width: 1280px) {
-  .grid__col--proj,
-.grid__col--skills {
+@media (min-width: 1367px) {
+  .grid__col--about {
     width: 65%;
     flex-direction: row;
     flex-wrap: wrap;
@@ -300,10 +301,46 @@ body {
   }
 }
 
+.grid__col--proj,
+.grid__col--skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3em;
+  margin-top: 3em;
+}
+@media (min-width: 768px) {
+  .grid__col--proj,
+.grid__col--skills {
+    flex-direction: row;
+    width: 65%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: stretch;
+  }
+}
+@media (min-width: 1367px) {
+  .grid__col--proj,
+.grid__col--skills {
+    width: 65%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: stretch;
+  }
+}
+
 @media (min-width: 1024px) {
   .grid__col--proj ul {
     display: flex;
     align-items: center;
+    justify-content: center;
     margin: 0 auto;
     flex-wrap: wrap;
   }
@@ -386,7 +423,7 @@ body {
   text-align: center;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1367px) {
   .grid__col--12 {
     text-align: center;
   }
@@ -464,9 +501,11 @@ body {
 }
 
 .sponsors {
+  margin-left: 1.5em;
+  margin-right: 1.5em;
   transition: 0.5s ease;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1367px) {
   .sponsors {
     display: inline-block;
     margin-left: 1.5em;
@@ -596,7 +635,7 @@ body {
 .highlight-videos {
   margin: 2.25em 0;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1367px) {
   .highlight-videos {
     margin: 2.25em 3em;
   }
