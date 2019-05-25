@@ -49,7 +49,8 @@
 
 .grid__col--store {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	flex-wrap: wrap;
 	justify-content: center;
 	align-items: stretch;
 	width: 100%;
@@ -148,13 +149,14 @@
 }
 
 .skills--card__store {
-	padding: em(6);
 	margin: em(12);
-	flex: 1 22%;
+	flex: 1 33%;
 	transition: .4s;
 	border: solid 2px white;
 	border-radius: em(6);
-
+	@include mq($medium) {
+		flex: 1 22%;
+	}
 }
 
 .skills--card:hover {
