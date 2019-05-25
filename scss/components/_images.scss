@@ -37,10 +37,7 @@
 	transition-duration: .4s;
 }
 
-
-
 @keyframes shake {
-
 	10%,
 	90% {
 		transform: translate3d(-1px, 0, 0);
@@ -74,7 +71,7 @@
 	padding: em(24);
 	max-width: 100%;
 	opacity: .9;
-	border-radius: 48px;
+	border-radius: em(32);
 }
 
 .sponsors {

@@ -303,7 +303,8 @@ body {
 
 .grid__col--store {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: stretch;
   width: 100%;
@@ -407,12 +408,16 @@ body {
 }
 
 .skills--card__store {
-  padding: 0.375em;
   margin: 0.75em;
-  flex: 1 22%;
+  flex: 1 33%;
   transition: 0.4s;
   border: solid 2px white;
   border-radius: 0.375em;
+}
+@media (min-width: 768px) {
+  .skills--card__store {
+    flex: 1 22%;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -529,7 +534,7 @@ body {
   padding: 1.5em;
   max-width: 100%;
   opacity: 0.9;
-  border-radius: 48px;
+  border-radius: 2em;
 }
 
 .sponsors {
