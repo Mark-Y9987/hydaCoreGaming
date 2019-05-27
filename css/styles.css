@@ -315,7 +315,6 @@ body {
 }
 @media (min-width: 768px) {
   .grid__col--store {
-    flex-direction: row;
     width: 80%;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -326,7 +325,6 @@ body {
 @media (min-width: 1367px) {
   .grid__col--store {
     width: 65%;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: center;

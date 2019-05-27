@@ -62,7 +62,6 @@
 	margin-top: em(48);
 
 	@include mq($medium) {
-		flex-direction: row;
 		width: 80%;
 		flex-wrap: wrap;
 		justify-content: space-between;
@@ -72,7 +71,6 @@
 
 	@include mq($x-large) {
 		width: 65%;
-		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: space-between;
 		align-content: center;
