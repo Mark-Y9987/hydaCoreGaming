@@ -103,6 +103,7 @@
 
 .img--frame__menu {
 	@extend %blocked;
+	margin: auto;
 	opacity: 1;
 	width: em(100);
 	height: em(100);
