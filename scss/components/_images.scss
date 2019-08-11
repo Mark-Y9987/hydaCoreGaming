@@ -38,6 +38,7 @@
 }
 
 @keyframes shake {
+
 	10%,
 	90% {
 		transform: translate3d(-1px, 0, 0);
@@ -152,4 +153,11 @@
 	margin: em(24);
 	width: 40px;
 	height: 40px;
+}
+
+.img-news {
+	display: inline-block;
+	padding: 24px;
+	width: 200px;
+	height: auto;
 }

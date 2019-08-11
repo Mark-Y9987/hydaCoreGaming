@@ -611,6 +611,13 @@ body {
   height: 40px;
 }
 
+.img-news {
+  display: inline-block;
+  padding: 24px;
+  width: 200px;
+  height: auto;
+}
+
 .rslides {
   position: relative;
   list-style: none;
@@ -627,7 +634,7 @@ body {
   width: 100%;
   left: 0;
   top: 0;
-  text-align: left;
+  text-align: center;
 }
 
 .rslides p {
