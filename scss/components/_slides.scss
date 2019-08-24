@@ -15,11 +15,14 @@
     left: 0;
     top: 0;
     text-align: center;
-
+    border: solid 2px white;
+    border-radius: em(6);
+    padding: 24px;
 }
 
 .rslides p {
-    text-align: left;
+    text-align: center;
+
 }
 
 .rslides li:first-child {
@@ -36,20 +39,22 @@
         height: auto;
         // float: left;
         margin: auto;
+        padding: 0 12px;
         width: 100%;
         border: 0;
         height: auto;
+
     }
 }
 
 .rslides .news--mobile {
     display: block;
-    height: auto;
     // float: left;
     margin: auto;
-    width: auto;
+    padding: 0 12px;
+    width: 100%;
     border: 0;
-    height: 250px;
+    height: auto;
 
     @include mq($large) {
         display: none;

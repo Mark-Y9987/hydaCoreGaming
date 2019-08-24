@@ -118,6 +118,12 @@ hr {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #0086df, rgba(0, 0, 0, 0));
 }
 
+.white-hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0), rgba(255, 255, 255, 0));
+}
+
 footer {
   padding: 0.75em;
 }
@@ -635,10 +641,13 @@ body {
   left: 0;
   top: 0;
   text-align: center;
+  border: solid 2px white;
+  border-radius: 0.375em;
+  padding: 24px;
 }
 
 .rslides p {
-  text-align: left;
+  text-align: center;
 }
 
 .rslides li:first-child {
@@ -655,6 +664,7 @@ body {
     display: block;
     height: auto;
     margin: auto;
+    padding: 0 12px;
     width: 100%;
     border: 0;
     height: auto;
@@ -663,11 +673,11 @@ body {
 
 .rslides .news--mobile {
   display: block;
-  height: auto;
   margin: auto;
-  width: auto;
+  padding: 0 12px;
+  width: 100%;
   border: 0;
-  height: 250px;
+  height: auto;
 }
 @media (min-width: 1024px) {
   .rslides .news--mobile {
@@ -822,6 +832,10 @@ body {
 
 .white {
   color: white;
+}
+
+p .white {
+  padding: 0 12px;
 }
 
 .link {
