@@ -38,7 +38,6 @@
 }
 
 @keyframes shake {
-
 	10%,
 	90% {
 		transform: translate3d(-1px, 0, 0);
@@ -162,6 +161,6 @@
 	height: auto;
 
 	@include mq($large) {
-		width: 400px;
+		width: 600px;
 	}
 }

@@ -47,6 +47,22 @@
     }
 }
 
+.rslides .news--large__double {
+
+
+
+    display: inline-block;
+    height: auto;
+    // float: left;
+    margin: auto;
+    padding: 0 12px;
+    width: 47%;
+    border: 0;
+    height: auto;
+
+
+}
+
 .rslides .news--mobile {
     display: block;
     // float: left;
@@ -58,5 +74,20 @@
 
     @include mq($large) {
         display: none;
+    }
+}
+
+.rslides .news--mobile__double {
+    display: block;
+    // float: left;
+    margin: auto;
+    padding: 0 12px;
+    width: 100%;
+    border: 0;
+    height: auto;
+
+    @include mq($large) {
+        display: inline-block;
+        width: 49%;
     }
 }
