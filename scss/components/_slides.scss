@@ -1,93 +1,86 @@
 .rslides {
-    position: relative;
-    list-style: none;
-    overflow: hidden;
-    width: 100%;
-    padding: 0;
-    margin: 0;
+	position: relative;
+	list-style: none;
+	overflow: hidden;
+	width: 100%;
+	padding: 0;
+	margin: 0;
 }
 
 .rslides li {
-    -webkit-backface-visibility: hidden;
-    position: absolute;
-    display: none;
-    width: 100%;
-    left: 0;
-    top: 0;
-    text-align: center;
-    border: solid 2px white;
-    border-radius: em(6);
-    padding: 24px;
+	-webkit-backface-visibility: hidden;
+	position: absolute;
+	display: none;
+	width: 100%;
+	left: 0;
+	top: 0;
+	text-align: center;
+	border: solid 2px white;
+	border-radius: em(6);
+	padding: 24px;
 }
 
 .rslides p {
-    text-align: center;
-
+	text-align: center;
 }
 
 .rslides li:first-child {
-    position: relative;
-    display: block;
-    float: left;
+	position: relative;
+	display: block;
+	float: left;
 }
 
 .rslides .news--large {
-    display: none;
+	display: none;
 
-    @include mq($large) {
-        display: block;
-        height: auto;
-        // float: left;
-        margin: auto;
-        padding: 0 12px;
-        width: 100%;
-        border: 0;
-        height: auto;
-
-    }
+	@include mq($large) {
+		display: block;
+		height: auto;
+		// float: left;
+		margin: auto;
+		padding: 0 12px;
+		width: 100%;
+		border: 0;
+		height: auto;
+	}
 }
 
 .rslides .news--large__double {
-
-
-
-    display: inline-block;
-    height: auto;
-    // float: left;
-    margin: auto;
-    padding: 0 12px;
-    width: 47%;
-    border: 0;
-    height: auto;
-
-
+	display: inline-block;
+	height: auto;
+	// float: left;
+	margin: auto;
+	padding: 0 12px;
+	width: 47%;
+	border: 0;
+	height: auto;
 }
 
 .rslides .news--mobile {
-    display: block;
-    // float: left;
-    margin: auto;
-    padding: 0 12px;
-    width: 100%;
-    border: 0;
-    height: auto;
+	display: block;
+	// float: left;
+	margin: auto;
+	padding: 0 12px;
+	width: 100%;
+	border: 0;
+	height: auto;
 
-    @include mq($large) {
-        display: none;
-    }
+	@include mq($large) {
+		display: none;
+	}
 }
 
 .rslides .news--mobile__double {
-    display: block;
-    // float: left;
-    margin: auto;
-    padding: 0 12px;
-    width: 100%;
-    border: 0;
-    height: auto;
+	display: block;
+	// float: left;
+	margin: auto;
+	padding: 0 12px;
+	width: 100%;
+	border: 0;
+	height: auto;
 
-    @include mq($large) {
-        display: inline-block;
-        width: 49%;
-    }
+	@include mq($large) {
+		display: inline-block;
+		width: 49%;
+	}
 }
