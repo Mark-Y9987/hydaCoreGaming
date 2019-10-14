@@ -620,8 +620,13 @@ body {
 .img-news {
   display: inline-block;
   padding: 24px;
-  width: 200px;
+  width: 300px;
   height: auto;
+}
+@media (min-width: 1024px) {
+  .img-news {
+    width: 400px;
+  }
 }
 
 .rslides {

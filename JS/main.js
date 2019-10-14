@@ -31,7 +31,7 @@ $(function () {
 	$('.rslides').responsiveSlides({
 		auto: true,
 		speed: 500,
-		timeout: 10000,
+		timeout: 7000,
 		nav: false,
 		pause: true
 	});

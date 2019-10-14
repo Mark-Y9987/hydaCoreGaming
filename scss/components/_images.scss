@@ -158,6 +158,10 @@
 .img-news {
 	display: inline-block;
 	padding: 24px;
-	width: 200px;
+	width: 300px;
 	height: auto;
+
+	@include mq($large) {
+		width: 400px;
+	}
 }
